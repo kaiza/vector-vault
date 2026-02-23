@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwqcx7x7axom"]
+[gd_scene load_steps=3 format=3 uid="uid://bwqcx7x7axom"]
 
 [ext_resource type="PackedScene" uid="uid://cdrocket000001" path="res://scenes/Rocket.tscn" id="1_rocket"]
+[ext_resource type="PackedScene" uid="uid://wallscene000001" path="res://scenes/Wall.tscn" id="2_wall"]
 
 [node name="World" type="Node2D"]
 
@@ -9,3 +10,43 @@
 [node name="Camera" type="Camera2D" parent="."]
 position_smoothing_enabled = true
 position_smoothing_speed = 5.0
+
+[node name="WallLeft1" parent="." instance=ExtResource("2_wall")]
+position = Vector2(-300, -400)
+rotation = 1.5708
+
+[node name="WallLeft2" parent="." instance=ExtResource("2_wall")]
+position = Vector2(-300, -200)
+rotation = 1.5708
+
+[node name="WallLeft3" parent="." instance=ExtResource("2_wall")]
+position = Vector2(-300, 0)
+rotation = 1.5708
+
+[node name="WallLeft4" parent="." instance=ExtResource("2_wall")]
+position = Vector2(-300, 200)
+rotation = 1.5708
+
+[node name="WallLeft5" parent="." instance=ExtResource("2_wall")]
+position = Vector2(-300, 400)
+rotation = 1.5708
+
+[node name="WallRight1" parent="." instance=ExtResource("2_wall")]
+position = Vector2(300, -400)
+rotation = 1.5708
+
+[node name="WallRight2" parent="." instance=ExtResource("2_wall")]
+position = Vector2(300, -200)
+rotation = 1.5708
+
+[node name="WallRight3" parent="." instance=ExtResource("2_wall")]
+position = Vector2(300, 0)
+rotation = 1.5708
+
+[node name="WallRight4" parent="." instance=ExtResource("2_wall")]
+position = Vector2(300, 200)
+rotation = 1.5708
+
+[node name="WallRight5" parent="." instance=ExtResource("2_wall")]
+position = Vector2(300, 400)
+rotation = 1.5708
