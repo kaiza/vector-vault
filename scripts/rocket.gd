@@ -16,7 +16,7 @@ func _physics_process(delta: float) -> void:
 	current_direction = current_direction.lerp(target_direction, min(delta / turn_duration, 1.0)).normalized()
 	velocity = current_direction * speed
 	move_and_slide()
-	$Sprite2D.rotation = current_direction.angle()
+	$Polygon2D.rotation = current_direction.angle()
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("tap_up"):

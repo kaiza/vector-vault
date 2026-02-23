@@ -7,7 +7,7 @@
 
 [node name="Rocket" parent="." instance=ExtResource("1_rocket")]
 
-[node name="Camera" type="Camera2D" parent="."]
+[node name="Camera" type="Camera2D" parent="Rocket"]
 position_smoothing_enabled = true
 position_smoothing_speed = 5.0
 
