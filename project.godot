@@ -10,6 +10,10 @@ config/name="vector-vault"
 config/features=PackedStringArray("4.3", "Mobile")
 run/main_scene="res://world/World.tscn"
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [input]
 
 tap_up={

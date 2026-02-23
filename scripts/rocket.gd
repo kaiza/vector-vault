@@ -12,6 +12,10 @@ const NW = Vector2(-1, -1).normalized()
 var current_direction: Vector2 = NE
 var target_direction: Vector2 = NE
 
+func _ready() -> void:
+	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
+	$Polygon2D.rotation = current_direction.angle()
+
 func _physics_process(delta: float) -> void:
 	current_direction = current_direction.lerp(target_direction, min(delta / turn_duration, 1.0)).normalized()
 	velocity = current_direction * speed
