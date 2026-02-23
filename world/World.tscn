@@ -1,6 +1,10 @@
-[gd_scene load_steps=1 format=3 uid="uid://bwqcx7x7axom"]
+[gd_scene load_steps=2 format=3 uid="uid://bwqcx7x7axom"]
+
+[ext_resource type="PackedScene" uid="uid://cdrocket000001" path="res://scenes/Rocket.tscn" id="1_rocket"]
 
 [node name="World" type="Node2D"]
+
+[node name="Rocket" parent="." instance=ExtResource("1_rocket")]
 
 [node name="Camera" type="Camera2D" parent="."]
 position_smoothing_enabled = true
