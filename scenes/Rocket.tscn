@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdrocket000001"]
+
+[ext_resource type="Script" path="res://scripts/rocket.gd" id="1_rocket"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_001"]
+radius = 12.0
+
+[node name="Rocket" type="CharacterBody2D"]
+script = ExtResource("1_rocket")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_001")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Trail" type="Line2D" parent="."]
+width = 4.0
